@@ -18,7 +18,6 @@ clean.addEventListener('click', cleanContainer)
 
 
 
-
 // FUNZIONI
 // funzione che permette di generare una griglia con gli .square
 function gridGenerateSquare() {
@@ -42,7 +41,8 @@ let width;
         width = "width7";
     }
     
-    
+
+
     // Ogni cella ha un numero progressivo, da 1 a 100.
     // Ci saranno quindi 10 caselle per ognuna delle 10 righe.
     for ( let i = 1; i <= num; i++) {
@@ -51,6 +51,7 @@ let width;
         newSquare.classList.add("square");
         newSquare.classList.add(width);
         
+        // attivare la singola cella con il numero e stampare nella console il numero della cella selezionata
         newSquare.addEventListener("click",
         function() {
             this.classList.add("active");
@@ -62,7 +63,17 @@ let width;
         container.append(newSquare);
 
         
+
+        let numSquareBoom = randomNumBoom ( num );
+        
+        
     }
+}
+
+// funzione per creare randomicamene numeri bomba
+function randomNumBoom ( num ) {
+    let randomNumSquareBoom = Math.floor((Math.random () * num ) + 1 );
+    console.log(randomNumSquareBoom);
 }
 
 // funzione di reset del container 
@@ -70,4 +81,4 @@ function cleanContainer (){
     container.innerHTML = "";
 }
 
-// attivare la singola cella con il numero e stampare nella console il numero della cella selezionata
+
