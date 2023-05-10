@@ -69,7 +69,9 @@ main {
     background-color: #0055ffce;
 }
 
-
+.square.boom {
+    background-color: #a70000;
+}
 /* footer */
 footer{
     height: 50px;
