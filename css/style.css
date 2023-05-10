@@ -30,6 +30,7 @@ main {
     background-color: #7fffd4;
     overflow: auto;
     padding: 40px 0;
+
 }
 
 #container_square {
@@ -81,4 +82,11 @@ footer{
 
 footer > div {
     margin: 0 10px;
+}
+
+#allert {
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+
 }
